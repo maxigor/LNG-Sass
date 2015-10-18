@@ -11,7 +11,7 @@
 }
 
 @function multiplica-fonte($valor-mult){
-	@return $valor-mult * $fonte-padrao;
+	@return round($valor-mult * $fonte-padrao);
 }
 
 ////////////////
