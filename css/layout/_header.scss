@@ -1,0 +1,76 @@
+
+/** Header **/
+header {
+  border-top: 5px solid $cor-padrao;
+  background: $cor-auxiliar;
+  height: 90px;
+  width: 100%;
+  position: absolute;
+
+    @media #{$information-phone} {
+      height: auto;
+
+        h1 {
+          max-width: 50%;
+          margin: 0 auto;
+
+            img {
+              max-width: 100%;
+              margin: .5em auto;
+              display: block;
+            }
+        }
+    }
+
+
+}
+
+header .container {
+  position: relative;
+    @media #{$information-phone} {
+      position: static;
+    }
+}
+
+.menu-opcoes {
+  position: absolute;
+  right: 0;
+  top: -.5em;
+  font-size: 1.2em;
+  font-weight: lighter;
+
+    @media #{$information-phone} {
+        position: static;
+        display: block;
+        text-align: center;
+        form {
+          width: auto;
+        }
+    }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+   display: inline-block;
+   width: 5em;
+
+    @media #{$information-phone} {
+      margin: .4em;
+
+      form {
+        width: auto;
+      }
+    }
+  }
+
+  a {
+   color: $cor-branca;
+   text-decoration: none;
+   :hover {
+    text-decoration: underline;
+    }
+  }
+
+}
